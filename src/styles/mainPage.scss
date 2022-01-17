@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.welcomeMessage {
+  text-align: center;
+  font-weight: 600;
+  font-size: $fontSize * 2;
+  margin-bottom: 32px;
+  padding-top: 32px;
+}
+
+.getStarted {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  padding: 128px 0 64px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 64px;
+}

@@ -1,0 +1,33 @@
+include ../components/section
+
+<!doctype html>
+html(lang='en')
+    head
+        title Welcome to Pug + Webpack 5 Boilerplate! 
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        meta(name="description", content="Basic boilerplate for building HTML and CSS from Pug and SCSS")
+        include ../components/scripts.pug
+        include ../components/styles.pug
+    body 
+        include ../components/header.pug
+        .container
+            h1.welcomeMessage Welcome to Pug + Webpack 5 Boilerplate! 
+            .card
+                p.getStarted 
+                    span To get started, edit&nbsp;
+                    span.code src/pages/index.pug
+                    span &nbsp;and save to reload.
+            .grid
+                +section('📄 Pages')
+                    p All pages are stored in <span class='code simple'>/src/pages</span> folder.
+                    p Use <span class='code simple'>yarn build</span> command to compile pug code to the HTML. After compiling all those pages will be moved to <span class='code simple'>/dist</span> folder.
+                +section('🧩 Components')
+                    p Components are used to fill your pages are stored in <span class='code simple'>/src/components</span> folder. Here you also can find mixins used as components with parameters to display content.
+                +section('💅 Styles')
+                    p Styles of your pages and components should be stored in <span class='code simple'>/src/styles</span> folder. You don't need to export/import or call it due to all those SCSS files will be collected, compiled and joined to the one bundle file <span class='code simple'>/dist/styles.css</span> on a build step.
+                +section('⚙️ Scripts')
+                    p Scripts works pretty similar to styles and of course they should be stored in <span class='code simple'>/src/scripts</span> folder. You don't need to export/import all those files because they will be joined to the <span class='code simple'>/dist/app.js</span>
+                +section('🖼️ Assets')
+                    p Store your static files like pictures. logos, videos and so on in <span class='code simple'>/src/assets</span> folder. Later those files will be compressed and moved&nbsp;to&nbsp;<span class='code simple'>/dist/assets</span>. You can use svg directly in a pug file merely using&nbsp;include syntax
+                +section('✏️ Fonts')
+                    p Fonts used on projects should be stored in <span class='code simple'>/src/fonts</span> folder. Later when you will build the projects all your font will be copied to in <span class='code simple'>/dist/fonts</span> folder without any changes.

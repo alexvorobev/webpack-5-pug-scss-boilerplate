@@ -1,0 +1,15 @@
+**/node_modules
+**/coverage
+**/dist
+**/build
+
+# generated artifacts
+**/introspected-schema.graphql
+**/graphql-schema.ts
+**/generated-schema.graphql
+**/graphql/index.tsx
+deployment/**/*.d.ts
+deployment/**/cdk.out
+
+#pug files
+**/*.pug

@@ -1,0 +1,26 @@
+<!doctype html>
+html(lang='en')
+    head
+        title Contact me
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        meta(name="description", content="Basic boilerplate for building HTML and CSS from Pug and SCSS")
+        include ../components/scripts.pug
+        include ../components/styles.pug
+    body 
+        include ../components/header.pug
+        .container.contactPage
+            h1.title Contact me
+            p.subtitle Be comfortable to contact me if you have any offer or interesting project.
+            .card.list
+                a.item(href="mailto:alexvorobev01@gmail.com", target="blank")
+                    include ../assets/mail.svg
+                    p Email
+                a.item(href="https://t.me/AlexVRB", target="blank")
+                    include ../assets/telegram.svg
+                    p Telegram
+                a.item(href="https://github.com/alexvorobev", target="blank")
+                    include ../assets/github.svg
+                    p GitHub
+                a.item(href="https://www.upwork.com/freelancers/~017e7646ac121982e4", target="blank")
+                    include ../assets/upwork.svg
+                    p Upwork

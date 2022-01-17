@@ -1,0 +1,44 @@
+@import "./variables.scss";
+
+.header {
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+  box-shadow: 0 1px 5px 0 rgb(0 0 0 / 10%);
+  margin-bottom: 32px;
+}
+
+.headerInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appName {
+  font-size: $fontSize * 1.5;
+  margin: 0;
+  padding: 0.7rem 1rem;
+  line-height: 1;
+  font-weight: normal;
+  transition: color 0.3s;
+  color: #4d4d4d;
+
+  span {
+    margin-top: -8px;
+    margin-left: -4px;
+    font-weight: 600;
+  }
+
+  &:hover {
+    color: #1ea7fd;
+  }
+}
+
+.navLink {
+  font-weight: 600;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #1ea7fd;
+  }
+}
